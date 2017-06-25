@@ -1,0 +1,115 @@
+/* sample users */
+
+
+/* Manager user*/
+1.{
+    "_id": {
+        "$oid": "594f8365f1e4673134a35c2e"
+    },
+    "email": "rahuljoshi1004@gmail.com",
+    "username": "rahul10",
+    "first_name": "Rahul",
+    "last_name": "joshi",
+    "role": "Manager",
+    "__v": 0
+},
+/* Employee user*/
+2.{
+    "_id": {
+        "$oid": "594f82f459afe51c50ed83e8"
+    },
+    "email": "ravijoshi0996@gmail.com",
+    "username": "ravi22",
+    "first_name": "ravi",
+    "last_name": "joshi",
+    "role": "Employee",
+    "__v": 0
+},
+
+3.{
+    "_id": {
+        "$oid": "594fc178028a4612501812ec"
+    },
+    "email": "vipulsingh20@gmail.com",
+    "username": "vipul 20",
+    "first_name": "vipul",
+    "last_name": "singh",
+    "role": "Employee",
+    "__v": 0
+},
+4.{
+    "_id": {
+        "$oid": "59501fbcb1804900042d118c"
+    },
+    "email": "virat1@gmail.com",
+    "username": "virat1",
+    "first_name": "Virat",
+    "last_name": "kohli",
+    "role": "Employee",
+    "__v": 0
+}
+
+/* Sample of leave Applications */
+//made by ravi
+1.{
+    "_id": {
+        "$oid": "594fbdfff4b57b1acc22ff3c"
+    },
+    "start_date": {
+        "$date": "2017-09-30T00:00:00.000Z"
+    },
+    "end_date": {
+        "$date": "2017-10-30T00:00:00.000Z"
+    },
+    "reason": "To take care of my pregnant wife",
+    "requestBy": "ravi22",
+    "approvalStatus": "Approved",
+    "requestAt": {
+        "$date": "2017-06-25T00:00:00.000Z"
+    },
+    "leaveType": "Paternity",
+    "__v": 0,
+    "approvedAt": {
+        "$date": "2017-06-25T00:00:00.000Z"
+    }
+}
+//made by vipul
+2.{
+    "_id": {
+        "$oid": "594fc360028a4612501812ed"
+    },
+    "start_date": {
+        "$date": "2017-06-26T00:00:00.000Z"
+    },
+    "end_date": {
+        "$date": "2017-06-30T00:00:00.000Z"
+    },
+    "reason": "To take care of father",
+    "requestBy": "vipul 20",
+    "approvalStatus": "Rejected",
+    "requestAt": {
+        "$date": "2017-06-25T00:00:00.000Z"
+    },
+    "leaveType": "FMLA",
+    "__v": 0
+}
+//made by virat
+3.{
+    "_id": {
+        "$oid": "59502029b1804900042d118d"
+    },
+    "start_date": {
+        "$date": "2017-07-25T00:00:00.000Z"
+    },
+    "end_date": {
+        "$date": "2017-07-30T00:00:00.000Z"
+    },
+    "reason": "To go for some official work",
+    "requestBy": "virat1",
+    "approvalStatus": "Pending",
+    "requestAt": {
+        "$date": "2017-06-25T00:00:00.000Z"
+    },
+    "leaveType": "Personal",
+    "__v": 0
+}
