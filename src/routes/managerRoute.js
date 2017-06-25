@@ -49,7 +49,6 @@ router.put('/respond',requireAuth,AuthenticationController.roleAuthorization(['M
         }
          res.json({ success: true, message: 'Successfully Responded.' });
      });
-
    } 
 });
 
