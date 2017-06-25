@@ -42,9 +42,7 @@ router.get('/viewApplications',requireAuth,AuthenticationController.roleAuthoriz
         else{
             res.send(data);
         }
-
-    })
- 
+    });
 });
 
 

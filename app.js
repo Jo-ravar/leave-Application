@@ -17,7 +17,7 @@ var empRoute=require('./src/routes/employeeRoute');
 var manRoute=require('./src/routes/managerRoute');
 app.use('/',firstRoute); 
 app.use('/employee',empRoute);
-//app.use('/manager',manRoute);
+app.use('/manager',manRoute);
 app.listen(app.get('port'),function(err) {
     if(!err)
     {
