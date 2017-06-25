@@ -1,0 +1,11 @@
+{
+  "name": "leaveapp",
+  "version": "1.0.0",
+  "description": "Apis for making a leave application",
+  "main": "app.js",
+  "scripts": {
+   "start": "node app.js"
+  },
+  "author": "Ravi Joshi",
+  "license": "ISC"
+}
