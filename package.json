@@ -4,7 +4,7 @@
   "description": "Apis for making a leave application",
   "main": "app.js",
   "scripts": {
-   "start": "node app.js"
+    "start": "node app.js"
   },
   "author": "Ravi Joshi",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "body-parser": "^1.17.0",
     "express": "^4.15.0",
     "jsonwebtoken": "^7.3.0",
+    "moment": "^2.18.1",
     "mongoose": "^4.8.5",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1"

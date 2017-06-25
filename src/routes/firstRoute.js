@@ -31,7 +31,7 @@ router.post('/add',function(req,res){
       });
       newUser.save(function(err) {
       if (err) {
-          console.log("Error in signup "+JSON.stringify(err));
+          console.log("Error in adding employee "+JSON.stringify(err));
         return res.json({ success: false, message: 'That email address or username already exists.'});
       }
       res.json({ success: true, message: 'Successfully created new user.' });
@@ -39,7 +39,7 @@ router.post('/add',function(req,res){
   } 
 });
 
-router.get('/token',function(req,res){
+router.post('/token',function(req,res){
  if(!req.body.email ||  !req.body.username ) {
     res.json({ success: false, message: 'Please provide email and username' });
   }else{
