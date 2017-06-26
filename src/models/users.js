@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+//User schem defined with the required fields
 var UserSchema = new Schema({
    email: {
     type: String,

@@ -4,6 +4,7 @@ var User = require('../models/users');
 var config = require('../utilities/config');
 
 // Setup work and export for the JWT passport strategy
+//if jwt token is verified it will pass the user
 module.exports = function(passport) {  
   var opts = {};
   opts.jwtFromRequest = ExtractJwt.fromAuthHeader();

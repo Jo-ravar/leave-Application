@@ -6,6 +6,7 @@ var moment = require('moment');
 var requireAuth = Passport.authenticate('jwt', {session: false});
 var AuthenticationController = require('../utilities/authentication');
 
+//route to view all application in system  
 router.get('/viewAll',requireAuth,AuthenticationController.roleAuthorization(['Manager']),function(req,res){
 
 leave.find({},function(err,data){
@@ -21,16 +22,19 @@ leave.find({},function(err,data){
     });
 });
 
+//to respond to application
 router.put('/respond',requireAuth,AuthenticationController.roleAuthorization(['Manager']),function(req,res){
+   //check for getting objectId in query
    if(!req.query.appId)
    {
         res.json({ success: false, message: 'Please provide application Id' });
    }
     var query={_id:req.query.appId}
-   if(req.body.status=='Approved')
+   if(req.body.status=='Approved')    //check for status
    {
        var approvedDate=moment(new Date()).format('YYYY-MM-DD');
        console.log("Date of approval:-- "+approvedDate);
+     //updating the leave record  
     leave.update(query,{$set:{ approvalStatus:req.body.status, approvedAt:approvedDate}},{new:false},function(err,result){
         if(err)
         {
@@ -40,6 +44,7 @@ router.put('/respond',requireAuth,AuthenticationController.roleAuthorization(['M
          res.json({ success: true, message: 'Successfully Approved.' });
      });
    }
+   //In case status is other than approved
    else{
        leave.update(query,{$set:{ approvalStatus:req.body.status}},{new:false},function(err,result){
         if(err)

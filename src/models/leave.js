@@ -2,6 +2,7 @@ var mongoose = require('mongoose');
 var moment = require('moment');
 var Schema = mongoose.Schema;
 
+//leave schema defined with require fields and enums
 var leaveSchema = new Schema({
     start_date:{type:Date ,required:true},
     end_date:{type:Date ,required:true},

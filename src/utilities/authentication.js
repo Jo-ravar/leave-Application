@@ -1,5 +1,9 @@
 var User = require('../models/users');
 
+
+//Function containing role array which is check against role of the user
+
+//If role of user is found in roles array then he is allowed to access further else denied
 exports.roleAuthorization = function(roles){
  
     return function(req, res, next){
@@ -21,3 +25,5 @@ exports.roleAuthorization = function(roles){
         });
     }
 }
+
+//this file is used to check who can access the API
