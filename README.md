@@ -43,7 +43,7 @@
         If accessed by manager :-- Send array of all the applications present in system.
  ````
  #### 6. URL:--https://leaveapplication.herokuapp.com/manager/respond?appId=ObjectId
- * Type:- POST
+ * Type:- PUT
  * Usage:-- To respond to the leave application in system.
  * Params Required **(IN BODY)** :- status *(ApprovalStatus:- 'Pending','Under Review','Approved','Rejected')* 
      
